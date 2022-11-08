@@ -21,6 +21,8 @@ class Car(ABC):
     def companyName(self):
         pass
 
+class NameLessCar(Car):
+    pass
 
 class BMW(Car):
     def companyName(self):
@@ -33,7 +35,9 @@ class Ferrari(Car):
 
 
 b = BMW()
-b.companyName()
+b.companyName() #COMPANY NAME IS BMW
 
 f = Ferrari()
-f.companyName()
+f.companyName() # COMPANY NAME IS Ferrari
+
+n = NameLessCar() #ERROR
